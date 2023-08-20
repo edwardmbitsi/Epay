@@ -162,3 +162,49 @@ h2:after{
   left:calc(50% - 94px);
   bottom:-3px;
 }
+
+/* Existing CSS */
+
+/* Add the following media query for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust container sizes and layout for smaller screens */
+  .col-md-5 {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .payment-form {
+    padding: 10px;
+  }
+
+  .header .page-name {
+    font-size: 16px;
+  }
+
+  /* Adjust other styles as needed */
+}
+/* Add these media queries at the end of your existing CSS */
+@media screen and (max-width: 767px) {
+  /* Adjust container width and margin for small screens */
+  .col-md-5.offset-md-4 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Make the background image fit the screen width */
+  .image {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust container width and margin for larger screens */
+  .col-md-5.offset-md-4 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
